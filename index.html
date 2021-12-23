@@ -1,0 +1,35 @@
+<html>
+    <link rel="stylesheet" href="start.css">
+    <head><title>The story</title></head>
+    <body>
+        <center>
+            <h1>The trapped games</h1>
+            <br>
+            <br>
+            <br>
+            <p>Help me get out of the loneliness
+                <br>
+                and play with me by going through
+                <br>
+                the obsticles and questions while
+                <br>
+                having fun!</p>
+                <button onclick="start()">Start</button>
+                <footer>Mady by Devgyan Prakash</footer>
+        </center>
+    </body>
+    <script src="start.js"></script>
+    <script>
+        /* To Disable Inspect Element */
+        $(document).bind("contextmenu",function(e) {
+         e.preventDefault();
+        });
+        
+        $(document).keydown(function(e){
+            if(e.which === 123){
+               return false;
+            }
+        });
+        /* if you see buttons with random id i never needed their ids so I put them for fun */
+        </script>
+</html>

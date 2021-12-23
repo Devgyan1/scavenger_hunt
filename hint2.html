@@ -1,0 +1,29 @@
+<html>
+    <link rel="stylesheet" href="style2.css">
+    <head><title>Anagram</title></head>
+    <body>
+        <center>
+        <h1>Anagram</h1>
+        <input type="text" placeholder="Your Answer All CAPITAL" id="anagram-ans">
+        <h1>128378I3837W3234675I64
+            <br>
+            776L78687486L45776748589W94
+            <br>
+            7983748I737757939N7474997</h1>
+        <button id="19is" onclick="letter()">Check</button>
+        </center>
+    </body>
+    <script src="main2.js"></script>
+    <script>
+        /* To Disable Inspect Element */
+        $(document).bind("contextmenu",function(e) {
+         e.preventDefault();
+        });
+        
+        $(document).keydown(function(e){
+            if(e.which === 123){
+               return false;
+            }
+        });
+        </script>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <link rel="stylesheet" href="style5.css">
+    <head><title>Find it</title></head>
+    <body>
+        <center>
+        <h1>Find a...</h1>
+        <input type="text" placeholder="All CAPITAL" id="find-ans">
+        <h2>Thing that is a cold storage and will freeze water.</h2>
+        <button id="38bd" onclick="find()">Check</button>
+        </center>
+    </body>
+    <script src="main5.js"></script>
+    <script>
+        /* To Disable Inspect Element */
+        $(document).bind("contextmenu",function(e) {
+         e.preventDefault();
+        });
+        
+        $(document).keydown(function(e){
+            if(e.which === 123){
+               return false;
+            }
+        });
+        </script>
+</html>

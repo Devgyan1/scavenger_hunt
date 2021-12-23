@@ -1,0 +1,32 @@
+<html>
+    <link rel="stylesheet" href="style.css">
+    <head><title>Key code</title></head>
+    <body>
+        <center>
+            <h1>Key code</h1>
+            <br>
+            <br>
+            <br>
+            <input type="number" id="code" placeholder="            8 Digits code">
+            <br>
+            <br>
+            <p>Find the code somewhere where people get warm and cozy with this hot thing but we don't use it.</p>
+            <br>
+            <br>
+            <button id="Enter" class="btn btn-success" onclick="check()">Enter</button>
+        </center>
+    </body>
+    <script src="main.js"></script>
+    <script>
+        /* To Disable Inspect Element */
+        $(document).bind("contextmenu",function(e) {
+         e.preventDefault();
+        });
+        
+        $(document).keydown(function(e){
+            if(e.which === 123){
+               return false;
+            }
+        });
+        </script>
+</html>

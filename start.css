@@ -1,0 +1,9 @@
+body{
+    background-color: chartreuse;
+    color: darkgreen;
+}
+footer{
+    position: fixed;
+    text-shadow: black;
+    font-size: x-small;
+}

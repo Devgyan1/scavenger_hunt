@@ -1,0 +1,25 @@
+<html>
+    <link rel="stylesheet" href="style3.css">
+    <head><title>Math</title></head>
+    <body>
+        <center>
+        <h1>Math</h1>
+        <input type="text" placeholder="Numbers in symbol form" id="math-ans">
+        <h1>928 x 681=?</h1>
+        <button id="64bg" onclick="number()">Check</button>
+        </center>
+    </body>
+    <script src="main3.js"></script>
+    <script>
+        /* To Disable Inspect Element */
+        $(document).bind("contextmenu",function(e) {
+         e.preventDefault();
+        });
+        
+        $(document).keydown(function(e){
+            if(e.which === 123){
+               return false;
+            }
+        });
+        </script>
+</html>

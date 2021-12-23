@@ -1,0 +1,31 @@
+<html>
+    <link rel="stylesheet" href="style2.css">
+    <head><title>Letter math</title></head>
+    <body>
+        <center>
+        <h1>Letter math</h1>
+        <h2>Key: a=1 b=2 c=3 and so on</h2>
+        <br>
+        <input type="number" placeholder="h+v=?" id="Letter">
+        <input type="number" placeholder="r+s=?" id="Letter1">
+        <input type="number" placeholder="t+d=?" id="Letter2">
+        <input type="number" placeholder="i+s=?" id="Letter3">
+        <input type="number" placeholder="z+f=?" id="Letter4">
+        <br>
+        <button id="47hc" onclick="letter()">Check</button>
+        </center>
+    </body>
+    <script src="main6.js"></script>
+    <script>
+        /* To Disable Inspect Element */
+        $(document).bind("contextmenu",function(e) {
+         e.preventDefault();
+        });
+        
+        $(document).keydown(function(e){
+            if(e.which === 123){
+               return false;
+            }
+        });
+        </script>
+</html>
